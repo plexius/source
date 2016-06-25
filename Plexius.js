@@ -2984,7 +2984,7 @@
                         var woots = basicBot.room.roomstats.totalWoots;
                         var mehs = basicBot.room.roomstats.totalMehs;
                         var grabs = basicBot.room.roomstats.totalCurates;
-                        API.sendChat(subChat(basicBot.chat.sessionstats, {name: from, woots: woots, mehs: mehs, grabs: grabs}));
+                        API.sendChat(basicBot.chat.sessionstats, {name: from, woots: woots, mehs: mehs, grabs: grabs});
                     }
                 }
             },
